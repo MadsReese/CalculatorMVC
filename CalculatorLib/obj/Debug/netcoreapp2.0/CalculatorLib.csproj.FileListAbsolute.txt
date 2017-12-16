@@ -1,0 +1,17 @@
+/Users/hk/Documents/Undervisning/Test 2017/Examples/Calculator/CalculatorLib/bin/Debug/netcoreapp2.0/CalculatorLib.deps.json
+/Users/hk/Documents/Undervisning/Test 2017/Examples/Calculator/CalculatorLib/bin/Debug/netcoreapp2.0/CalculatorLib.dll
+/Users/hk/Documents/Undervisning/Test 2017/Examples/Calculator/CalculatorLib/bin/Debug/netcoreapp2.0/CalculatorLib.pdb
+/Users/hk/Documents/Undervisning/Test 2017/Examples/Calculator/CalculatorLib/obj/Debug/netcoreapp2.0/CalculatorLib.csprojResolveAssemblyReference.cache
+/Users/hk/Documents/Undervisning/Test 2017/Examples/Calculator/CalculatorLib/obj/Debug/netcoreapp2.0/CalculatorLib.csproj.CoreCompileInputs.cache
+/Users/hk/Documents/Undervisning/Test 2017/Examples/Calculator/CalculatorLib/obj/Debug/netcoreapp2.0/CalculatorLib.AssemblyInfoInputs.cache
+/Users/hk/Documents/Undervisning/Test 2017/Examples/Calculator/CalculatorLib/obj/Debug/netcoreapp2.0/CalculatorLib.AssemblyInfo.cs
+/Users/hk/Documents/Undervisning/Test 2017/Examples/Calculator/CalculatorLib/obj/Debug/netcoreapp2.0/CalculatorLib.dll
+/Users/hk/Documents/Undervisning/Test 2017/Examples/Calculator/CalculatorLib/obj/Debug/netcoreapp2.0/CalculatorLib.pdb
+/Users/hk/Documents/Undervisning/Test 2017/Examples/Calculator_Selenium_Mac/CalculatorLib/bin/Debug/netcoreapp2.0/CalculatorLib.deps.json
+/Users/hk/Documents/Undervisning/Test 2017/Examples/Calculator_Selenium_Mac/CalculatorLib/bin/Debug/netcoreapp2.0/CalculatorLib.dll
+/Users/hk/Documents/Undervisning/Test 2017/Examples/Calculator_Selenium_Mac/CalculatorLib/bin/Debug/netcoreapp2.0/CalculatorLib.pdb
+/Users/hk/Documents/Undervisning/Test 2017/Examples/Calculator_Selenium_Mac/CalculatorLib/obj/Debug/netcoreapp2.0/CalculatorLib.csproj.CoreCompileInputs.cache
+/Users/hk/Documents/Undervisning/Test 2017/Examples/Calculator_Selenium_Mac/CalculatorLib/obj/Debug/netcoreapp2.0/CalculatorLib.AssemblyInfoInputs.cache
+/Users/hk/Documents/Undervisning/Test 2017/Examples/Calculator_Selenium_Mac/CalculatorLib/obj/Debug/netcoreapp2.0/CalculatorLib.AssemblyInfo.cs
+/Users/hk/Documents/Undervisning/Test 2017/Examples/Calculator_Selenium_Mac/CalculatorLib/obj/Debug/netcoreapp2.0/CalculatorLib.dll
+/Users/hk/Documents/Undervisning/Test 2017/Examples/Calculator_Selenium_Mac/CalculatorLib/obj/Debug/netcoreapp2.0/CalculatorLib.pdb

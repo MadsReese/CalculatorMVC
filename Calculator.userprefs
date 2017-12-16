@@ -1,0 +1,16 @@
+﻿<Properties StartupConfiguration="{C8C3B008-BB7D-41C1-9428-703459656B45}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="CalculatorMVC/Controllers/HomeController.cs">
+    <Files>
+      <File FileName="Calculator.Selenium/CalculatorSeleniumTest.cs" Line="1" Column="1" />
+      <File FileName="CalculatorLib/Calculator.cs" Line="1" Column="1" />
+      <File FileName="CalculatorMVC/Controllers/HomeController.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.CalculatorMVC PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>
