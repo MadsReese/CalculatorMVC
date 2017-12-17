@@ -22,6 +22,7 @@ namespace Calculator.UnitTests
         }
 
         //Failing test
+        [Ignore("Intentionally failing")]
         [Test]
         public void Add1and1equals3()
         {
