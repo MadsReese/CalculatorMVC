@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculatorMVC", "Calculator
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calculator.Selenium", "Calculator.Selenium\Calculator.Selenium.csproj", "{15507655-0FDE-44FD-8B33-A7D1FE68ADBE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calculator.UnitTests", "Calculator.Unit\Calculator.UnitTests.csproj", "{7ACB0195-AF82-43E8-846B-8CA4F9BCEF49}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,5 +27,9 @@ Global
 		{15507655-0FDE-44FD-8B33-A7D1FE68ADBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{15507655-0FDE-44FD-8B33-A7D1FE68ADBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{15507655-0FDE-44FD-8B33-A7D1FE68ADBE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7ACB0195-AF82-43E8-846B-8CA4F9BCEF49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7ACB0195-AF82-43E8-846B-8CA4F9BCEF49}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7ACB0195-AF82-43E8-846B-8CA4F9BCEF49}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7ACB0195-AF82-43E8-846B-8CA4F9BCEF49}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

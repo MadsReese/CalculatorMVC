@@ -26,3 +26,17 @@
 /Users/hk/Documents/Undervisning/Test 2017/Examples/Calculator_Selenium_Mac/Calculator.Selenium/obj/Debug/netcoreapp2.0/Calculator.Selenium.AssemblyInfo.cs
 /Users/hk/Documents/Undervisning/Test 2017/Examples/Calculator_Selenium_Mac/Calculator.Selenium/obj/Debug/netcoreapp2.0/Calculator.Selenium.dll
 /Users/hk/Documents/Undervisning/Test 2017/Examples/Calculator_Selenium_Mac/Calculator.Selenium/obj/Debug/netcoreapp2.0/Calculator.Selenium.pdb
+/Users/mre/Downloads/Calculator_Selenium_Mac/Calculator.Selenium/bin/Debug/netcoreapp2.0/NUnit3.TestAdapter.dll
+/Users/mre/Downloads/Calculator_Selenium_Mac/Calculator.Selenium/bin/Debug/netcoreapp2.0/nunit.engine.netstandard.dll
+/Users/mre/Downloads/Calculator_Selenium_Mac/Calculator.Selenium/bin/Debug/netcoreapp2.0/Mono.Cecil.dll
+/Users/mre/Downloads/Calculator_Selenium_Mac/Calculator.Selenium/bin/Debug/netcoreapp2.0/Calculator.Selenium.deps.json
+/Users/mre/Downloads/Calculator_Selenium_Mac/Calculator.Selenium/bin/Debug/netcoreapp2.0/Calculator.Selenium.runtimeconfig.json
+/Users/mre/Downloads/Calculator_Selenium_Mac/Calculator.Selenium/bin/Debug/netcoreapp2.0/Calculator.Selenium.runtimeconfig.dev.json
+/Users/mre/Downloads/Calculator_Selenium_Mac/Calculator.Selenium/bin/Debug/netcoreapp2.0/Calculator.Selenium.dll
+/Users/mre/Downloads/Calculator_Selenium_Mac/Calculator.Selenium/bin/Debug/netcoreapp2.0/Calculator.Selenium.pdb
+/Users/mre/Downloads/Calculator_Selenium_Mac/Calculator.Selenium/obj/Debug/netcoreapp2.0/Calculator.Selenium.csprojResolveAssemblyReference.cache
+/Users/mre/Downloads/Calculator_Selenium_Mac/Calculator.Selenium/obj/Debug/netcoreapp2.0/Calculator.Selenium.csproj.CoreCompileInputs.cache
+/Users/mre/Downloads/Calculator_Selenium_Mac/Calculator.Selenium/obj/Debug/netcoreapp2.0/Calculator.Selenium.AssemblyInfoInputs.cache
+/Users/mre/Downloads/Calculator_Selenium_Mac/Calculator.Selenium/obj/Debug/netcoreapp2.0/Calculator.Selenium.AssemblyInfo.cs
+/Users/mre/Downloads/Calculator_Selenium_Mac/Calculator.Selenium/obj/Debug/netcoreapp2.0/Calculator.Selenium.dll
+/Users/mre/Downloads/Calculator_Selenium_Mac/Calculator.Selenium/obj/Debug/netcoreapp2.0/Calculator.Selenium.pdb
