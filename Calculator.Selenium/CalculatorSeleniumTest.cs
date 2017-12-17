@@ -5,7 +5,6 @@ using System.Threading;
 using NUnit.Framework;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
-using OpenQA.Selenium.Firefox;
 using OpenQA.Selenium.Support.UI;
 
 namespace Calculator.Selenium
@@ -27,7 +26,7 @@ namespace Calculator.Selenium
             // Notice the Environment.CurrentDirectory parameter. It specifies the
             // path where the driver can find the chromedriver.exe file. It was
             // added automatically to the bin folder by the Nuget package.
-            driver = new FirefoxDriver();
+            driver = new ChromeDriver(Environment.CurrentDirectory);
 			baseURL = "http://localhost:5001/";
 			verificationErrors = new StringBuilder();
 		}
