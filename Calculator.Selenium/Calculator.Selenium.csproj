@@ -10,5 +10,6 @@
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.3.0" />
     <PackageReference Include="Selenium.WebDriver" Version="3.6.0" />
     <PackageReference Include="Selenium.WebDriver.ChromeDriver" Version="2.33.0" />
+    <PackageReference Include="Selenium.WebDriver.GeckoDriver" Version="0.19.1" />
   </ItemGroup>
 </Project>
