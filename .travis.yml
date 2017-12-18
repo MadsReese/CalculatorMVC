@@ -3,5 +3,9 @@ solution: Calculator.sln
 dotnet: 2.0.0
 script: 
   - ./run-build-test.sh
-  - grep "Test Results" build.log
+
+addons:
+  sauce_connect:
+    username: MadsReese
+    access_key: c8831155-99de-483b-b3ee-b437ba36a25c
 ...
