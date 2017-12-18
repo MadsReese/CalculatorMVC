@@ -1,0 +1,4 @@
+language: csharp
+solution: Calculator.sln
+script:
+-./run-build.test.sh
