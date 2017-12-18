@@ -2,5 +2,5 @@ language: csharp
 solution: Calculator.sln
 dotnet: 2.0.0
 script: 
-  - ./run-build.test.sh
+  - ./run-build-test.sh
 ...
