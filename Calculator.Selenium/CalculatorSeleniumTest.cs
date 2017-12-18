@@ -7,11 +7,12 @@ using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Firefox;
 using OpenQA.Selenium.PhantomJS;
+using OpenQA.Selenium.Remote;
 using OpenQA.Selenium.Support.UI;
 
 namespace Calculator.Selenium
 {
-	[TestFixture]
+	[TestFixture ("chrome", "62", "Windows 7", "", "")]
 	public class CalculatorSeleniumTest
 	{
 		private IWebDriver driver;
@@ -19,6 +20,22 @@ namespace Calculator.Selenium
 		private string baseURL;
 		private bool acceptNextAlert = true;
 
+        private String browser;
+        private String version;
+        private String os;
+        private String deviceName;
+        private String deviceOrientation;
+
+        public CalculatorSeleniumTest(String browser, String version, String os, String deviceName, String deviceOrientation)
+        {
+            this.browser = browser;
+            this.version = version;
+            this.os = os;
+            this.deviceName = deviceName;
+            this.deviceOrientation = deviceOrientation;
+        }
+
+        /**
 		[SetUp]
 		public void SetupTest()
 		{
@@ -30,10 +47,58 @@ namespace Calculator.Selenium
             // added automatically to the bin folder by the Nuget package.
             //driver = new ChromeDriver(Environment.CurrentDirectory);
             //driver = new FirefoxDriver();
-            driver = new PhantomJSDriver();
+            //driver = new PhantomJSDriver();
+            driver = new RemoteWebDriver();
             baseURL = "http://localhost:5001/";
 			verificationErrors = new StringBuilder();
 		}
+		**/
+
+        [SetUp]
+        public void Init()
+        {
+            DesiredCapabilities caps = new DesiredCapabilities();
+            caps.SetCapability(CapabilityType.BrowserName, browser);
+            caps.SetCapability(CapabilityType.Version, version);
+            caps.SetCapability(CapabilityType.Platform, os);
+            caps.SetCapability("deviceName", deviceName);
+            caps.SetCapability("deviceOrientation", deviceOrientation);
+            caps.SetCapability("username", "SAUCE_USERNAME");
+            caps.SetCapability("accessKey", "SAUCE_ACCESS_KEY");
+            caps.SetCapability("name", TestContext.CurrentContext.Test.Name);
+
+            driver = new RemoteWebDriver(new Uri("http://ondemand.saucelabs.com:80/wd/hub"), caps, TimeSpan.FromSeconds(600));
+
+
+        }
+
+        [TearDown]
+        public void CleanUp()
+        {
+            bool passed = TestContext.CurrentContext.Result.Outcome.Status == NUnit.Framework.Interfaces.TestStatus.Passed;
+            try
+            {
+                // Logs the result to Sauce Labs
+                ((IJavaScriptExecutor)driver).ExecuteScript("sauce:job-result=" + (passed ? "passed" : "failed"));
+            }
+            finally
+            {
+                // Terminates the remote webdriver session
+                driver.Quit();
+            }
+        }
+
+        [Test]
+        public void googleTest()
+        {
+            driver.Navigate().GoToUrl("http://www.google.com");
+            StringAssert.Contains("Google", driver.Title);
+            IWebElement query = driver.FindElement(By.Name("q"));
+            query.SendKeys("Sauce Labs");
+            query.Submit();
+        }
+
+        /**
 
 		[TearDown]
 		public void TeardownTest()
@@ -49,6 +114,7 @@ namespace Calculator.Selenium
 			Assert.AreEqual("", verificationErrors.ToString());
 		}
 
+        
 		[Test]
 		public void TheCalculatorSeleniumTest()
 		{
@@ -66,6 +132,10 @@ namespace Calculator.Selenium
 			Assert.AreEqual("50,00", driver.FindElement(By.Id("result")).Text);
 
 		}
+
+        **/
+
+
 
 		private bool IsElementPresent(By by)
 		{
