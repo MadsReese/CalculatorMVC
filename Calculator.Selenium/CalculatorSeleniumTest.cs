@@ -28,9 +28,10 @@ namespace Calculator.Selenium
             // Notice the Environment.CurrentDirectory parameter. It specifies the
             // path where the driver can find the chromedriver.exe file. It was
             // added automatically to the bin folder by the Nuget package.
-            driver = new ChromeDriver(Environment.CurrentDirectory);
+            //driver = new ChromeDriver(Environment.CurrentDirectory);
             //driver = new FirefoxDriver();
-			baseURL = "http://localhost:5001/";
+            driver = new PhantomJSDriver();
+            baseURL = "http://localhost:5001/";
 			verificationErrors = new StringBuilder();
 		}
 
