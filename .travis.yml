@@ -7,5 +7,5 @@ script:
 addons:
   sauce_connect:
     username: MadsReese
-    access_key: c8831155-99de-483b-b3ee-b437ba36a25c
+    access_key: 
 ...
