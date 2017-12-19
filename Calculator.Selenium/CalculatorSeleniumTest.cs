@@ -45,8 +45,8 @@ namespace Calculator.Selenium
             // Notice the Environment.CurrentDirectory parameter. It specifies the
             // path where the driver can find the chromedriver.exe file. It was
             // added automatically to the bin folder by the Nuget package.
-            //driver = new ChromeDriver(Environment.CurrentDirectory);
-            driver = new FirefoxDriver();
+            driver = new ChromeDriver(Environment.CurrentDirectory);
+            //driver = new FirefoxDriver();
             baseURL = "http://localhost:5001/";
 			verificationErrors = new StringBuilder();
 		}
@@ -122,12 +122,13 @@ namespace Calculator.Selenium
 			driver.Navigate().GoToUrl(baseURL);
 
 
-			driver.FindElement(By.Id("FirstNumber")).Clear();
-		    driver.FindElement(By.Id("FirstNumber")).SendKeys("30");
-			driver.FindElement(By.Id("SecondNumber")).Clear();
-			driver.FindElement(By.Id("SecondNumber")).SendKeys("20");
+			
+            driver.FindElement(By.XPath("//*[@id='FirstNumber']")).Clear();
+            driver.FindElement(By.XPath("//*[@id='FirstNumber']")).SendKeys("30");
+            driver.FindElement(By.XPath("//*[@id='SecondNumber']")).Clear();
+            driver.FindElement(By.XPath("//*[@id='SecondNumber']")).SendKeys("20");
 			driver.FindElement(By.CssSelector("input.btn.btn-default")).Click();
-			Assert.AreEqual("50.00", driver.FindElement(By.Id("result")).Text);
+            Assert.AreEqual("50.00", driver.FindElement(By.XPath("//*[@id='result']")).Text);
 
 		}
 
