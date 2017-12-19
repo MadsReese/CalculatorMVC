@@ -35,7 +35,7 @@ namespace Calculator.Selenium
             this.deviceOrientation = deviceOrientation;
         }
 
-        /**
+
 		[SetUp]
 		public void SetupTest()
 		{
@@ -46,14 +46,12 @@ namespace Calculator.Selenium
             // path where the driver can find the chromedriver.exe file. It was
             // added automatically to the bin folder by the Nuget package.
             //driver = new ChromeDriver(Environment.CurrentDirectory);
-            //driver = new FirefoxDriver();
-            //driver = new PhantomJSDriver();
-            driver = new RemoteWebDriver();
+            driver = new FirefoxDriver();
             baseURL = "http://localhost:5001/";
 			verificationErrors = new StringBuilder();
 		}
-		**/
-
+		
+        /**
         [SetUp]
         public void Init()
         {
@@ -98,7 +96,7 @@ namespace Calculator.Selenium
             query.Submit();
         }
 
-        /**
+        **/
 
 		[TearDown]
 		public void TeardownTest()
@@ -129,11 +127,11 @@ namespace Calculator.Selenium
 			driver.FindElement(By.Id("SecondNumber")).Clear();
 			driver.FindElement(By.Id("SecondNumber")).SendKeys("20");
 			driver.FindElement(By.CssSelector("input.btn.btn-default")).Click();
-			Assert.AreEqual("50,00", driver.FindElement(By.Id("result")).Text);
+			Assert.AreEqual("50.00", driver.FindElement(By.Id("result")).Text);
 
 		}
 
-        **/
+
 
 
 
