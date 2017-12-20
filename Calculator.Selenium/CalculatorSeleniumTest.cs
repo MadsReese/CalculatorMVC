@@ -36,6 +36,7 @@ namespace Calculator.Selenium
         }
 
 
+
 		[SetUp]
 		public void SetupTest()
 		{
@@ -52,6 +53,9 @@ namespace Calculator.Selenium
 		}
 		
         /**
+         * Below was used for Saucelabs Selenium integration
+         * 
+
         [SetUp]
         public void Init()
         {
@@ -109,7 +113,7 @@ namespace Calculator.Selenium
 			{
 				// Ignore errors if unable to close the browser
 			}
-			//Assert.AreEqual("", verificationErrors.ToString());
+			Assert.AreEqual("", verificationErrors.ToString());
 		}
 
         
@@ -160,9 +164,6 @@ namespace Calculator.Selenium
             Assert.AreEqual("2.00", driver.FindElement(By.XPath("//*[@id='result']")).Text);
 
         }
-
-
-
 
 
 		private bool IsElementPresent(By by)

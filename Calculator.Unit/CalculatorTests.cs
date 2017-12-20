@@ -24,14 +24,14 @@ namespace Calculator.UnitTests
 
 
         [Test]
-        public void Add1and2equals3()
+        public void Add1and1equals3()
         {
             //Arrange
             var calc = new CalculatorLib.Calculator();
             int expected = 3;
 
             //Act
-            int result = calc.Add(1, 2);
+            int result = calc.Add(1, 1);
 
             //Assert
             Assert.AreEqual(expected, result);
