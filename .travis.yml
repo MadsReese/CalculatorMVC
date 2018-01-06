@@ -4,8 +4,22 @@ dotnet: 2.0.0
 script: 
   - ./run-build-test.sh
 
+env:
+  global:
+   # The next declaration is the encrypted COVERITY_SCAN_TOKEN, created
+   #   via the "travis encrypt" command using the project repo's public key
+   - secure: "jIQjeKGCKqc6Y8dSFtXR5xDY0MWEv/4w5PQLJsrfBVPFE6rFLx5Je+XC00hYGmXDf6PlveVGzOhSXIwxBbA38yimJc060snoOK98CrcsuNaTWjwpu29DFBOd+9TpXNJeDlT98TuP9cEpgtuUI/0O2osgGHehi9vCav8w1i32frxk4ech+LmMMJJgV2+A7xOocDHjpBeBVClROXag7gjSZXjaO+mznOTkLj7EqrbMc6Sn455xOLBq2ej5vc5UQh0foA44jqw5rVe44cR6V/XU0EDeGsQX+TCKU40jYjY3IZ9jXysOj1FgHcpvoyVnR/4hYQ47oTzjquJQjH7PKw3nS8ZGO9AvGTuU4TPTW2UQIkXw/qqqs+2UxuBXbZVynreOETGAZn8u4Ccjj0UzcrdrfzoBpldg31fRgCreoArM90cRsQDY1x/6Sd/w+Czd4KlLod/h4SBczJPdGcAudg0b8YrZBpfIB/eBqxNCFU8E8PRgIHdpHlGcENHfUd2P4nMu3nibuMTcKQJ3UFpIFUYzAAhlRnBH6u6GLQ8nSQgjp1BngvC63NPu8Q7UyeR6OIoxa4zVMC3yuwVCQdZLzEvUrksWaR8CEp7c0XMHv1pt6YPyY8WuaDccjniQU2qsbEV0ZWE5fmVQIttB1bOkmLfcDQYnlJAoysw60HL1FT6ZvLc="
+
+before_install:
+      - echo -n | openssl s_client -connect scan.coverity.com:443 | sed -ne '/-BEGIN CERTIFICATE-/,/-END CERTIFICATE-/p' | sudo tee -a /etc/ssl/certs/ca-
+
 addons:
-  sauce_connect:
-    username: MadsReese
-    access_key: 
+  coverity_scan:
+    project:
+      name: "MadsReese/CalculatorMVC"
+      description: "Test project to learn CI"
+    notification_email: mads.reese@gmail.com
+    build_command_prepend: dotnet restore
+    build_command: dotnet build
+    branch_pattern: master 
 ...
