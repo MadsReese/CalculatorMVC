@@ -19,7 +19,7 @@ addons:
       name: "MadsReese/CalculatorMVC"
       description: "Test project to learn CI"
     notification_email: mads.reese@gmail.com
-    build_command_prepend: dotnet restore
-    build_command: dotnet build
+    build_command_prepend: xbuild restore
+    build_command: xbuild build
     branch_pattern: master 
 ...
