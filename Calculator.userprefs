@@ -1,9 +1,9 @@
 ﻿<Properties StartupConfiguration="{C8C3B008-BB7D-41C1-9428-703459656B45}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="Calculator_Selenium_Mac Status">
     <Files>
-      <File FileName="Calculator.Selenium/CalculatorSeleniumTest.cs" Line="31" Column="13" />
+      <File FileName="Calculator.Selenium/CalculatorSeleniumTest.cs" Line="132" Column="33" />
       <File FileName="CalculatorLib/Calculator.cs" Line="1" Column="1" />
-      <File FileName="Calculator.Unit/CalculatorTests.cs" Line="25" Column="42" />
+      <File FileName="Calculator.Unit/CalculatorTests.cs" Line="25" Column="36" />
       <File FileName="Calculator_Selenium_Mac Status" />
     </Files>
   </MonoDevelop.Ide.Workbench>

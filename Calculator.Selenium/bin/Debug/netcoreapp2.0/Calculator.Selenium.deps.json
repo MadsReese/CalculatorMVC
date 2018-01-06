@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.0",
-    "signature": "5d18fc5f6cb51b31954e14d1bd1036751b289e6e"
+    "signature": "7cd87e09a129fca36e7854f11ff26371e17a7f60"
   },
   "compilationOptions": {},
   "targets": {
@@ -12,7 +12,8 @@
           "NUnit": "3.8.1",
           "NUnit3TestAdapter": "3.8.0",
           "Selenium.WebDriver": "3.6.0",
-          "Selenium.WebDriver.ChromeDriver": "2.33.0"
+          "Selenium.WebDriver.ChromeDriver": "2.33.0",
+          "Selenium.WebDriver.GeckoDriver": "0.19.1"
         },
         "runtime": {
           "Calculator.Selenium.dll": {}
@@ -394,6 +395,7 @@
         }
       },
       "Selenium.WebDriver.ChromeDriver/2.33.0": {},
+      "Selenium.WebDriver.GeckoDriver/0.19.1": {},
       "System.AppContext/4.1.0": {
         "dependencies": {
           "System.Runtime": "4.3.0"
@@ -1135,6 +1137,13 @@
       "sha512": "sha512-zyNEqhO384c8rMqhqm3A/t846Mq3P/q0bRWGOK1WbrcAIxMlzNMebcsMLmf36CA16/ZAkadE/S3ZppmSa7v0Qw==",
       "path": "selenium.webdriver.chromedriver/2.33.0",
       "hashPath": "selenium.webdriver.chromedriver.2.33.0.nupkg.sha512"
+    },
+    "Selenium.WebDriver.GeckoDriver/0.19.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-8u8l4isGWc6z/eP0ljs5CPVATLyWmNAo5T0AbRxsJLhcoP/QK4OPmHvS+qaSXVAkj2UFjpn7ssVXA3v5phjb3Q==",
+      "path": "selenium.webdriver.geckodriver/0.19.1",
+      "hashPath": "selenium.webdriver.geckodriver.0.19.1.nupkg.sha512"
     },
     "System.AppContext/4.1.0": {
       "type": "package",
