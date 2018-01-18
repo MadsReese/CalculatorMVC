@@ -129,8 +129,8 @@ namespace Calculator.Selenium
             driver.FindElement(By.XPath("//*[@id='SecondNumber']")).Clear();
             driver.FindElement(By.XPath("//*[@id='SecondNumber']")).SendKeys("20");
 			driver.FindElement(By.CssSelector("input.btn.btn-default")).Click();
-            Assert.AreEqual("50.00", driver.FindElement(By.XPath("//*[@id='result']")).Text);
-
+            Assert.AreEqual("50,00", driver.FindElement(By.XPath("//*[@id='result']")).Text);
+           
 		}
 
         [Test]
@@ -142,7 +142,7 @@ namespace Calculator.Selenium
             driver.FindElement(By.XPath("//*[@id='SecondNumber']")).Clear();
             driver.FindElement(By.XPath("//*[@id='SecondNumber']")).SendKeys("10");
             driver.FindElement(By.CssSelector("input.btn.btn-default")).Click();
-            Assert.AreEqual("50.00", driver.FindElement(By.XPath("//*[@id='result']")).Text);
+            Assert.AreEqual("50,00", driver.FindElement(By.XPath("//*[@id='result']")).Text);
 
         }
 
@@ -155,7 +155,7 @@ namespace Calculator.Selenium
             driver.FindElement(By.XPath("//*[@id='SecondNumber']")).Clear();
             driver.FindElement(By.XPath("//*[@id='SecondNumber']")).SendKeys("1");
             driver.FindElement(By.CssSelector("input.btn.btn-default")).Click();
-            Assert.AreEqual("2.00", driver.FindElement(By.XPath("//*[@id='result']")).Text);
+            Assert.AreEqual("2,00", driver.FindElement(By.XPath("//*[@id='result']")).Text);
         }
 
 
